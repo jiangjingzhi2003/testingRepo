@@ -1,0 +1,63 @@
+body {
+    background-image: url(https://papers.co/wallpaper/papers.co-we14-pattern-background-apple-iphone12-rainbow-36-3840x2400-4k-wallpaper.jpg);
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* Apply the animation to the image */
+.rotate-image {
+    animation: rotate 4s linear infinite; /* Adjust duration and timing function as needed */
+}
+.text1 {
+    color: white;
+}
+.link1 {
+    color: white;
+    font-size: 20px;
+}
+
+div.class1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: sticky;
+    top:0;
+}
+div.class2 {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /*at the center of the box*/
+    align-items:center;
+    transform: scale(1);
+
+    transition: 1s;
+}
+
+div:hover {
+    background-color: yellow;
+    transform: scale(2);
+    width: 100px;
+}
+
+@media only screen and (max-width: 600px){
+    div.class2 {
+        background-color: aqua;
+    }
+}
+
+.input {
+    background-color: blue;
+}
